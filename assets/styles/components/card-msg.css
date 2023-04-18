@@ -1,0 +1,20 @@
+.card-msg {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-msg__icon-done {   
+    background-image: url(../../img/checkmark.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    width: 3.5rem;
+}
+
+.card-msg__title {
+    max-width: 20rem;
+}

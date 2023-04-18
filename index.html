@@ -9,6 +9,7 @@
 
         <title>Doguito Petshop | Criar conta</title>
     </head>
+
     <body>
         <header class="header">
             <img src="assets/img/doguito.svg" alt="Logo Doguito" class="header__logo">
@@ -22,7 +23,7 @@
 
                 <h2 class="card__title">Complete seu cadastro</h2>
 
-                <form action="" class="form flex flex--column">
+                <form action="pages/registers/msg-success.html" class="form flex flex--column">
                     <fieldset>
 
                         <legend class="form__legend">Informações básicas</legend>
@@ -52,7 +53,7 @@
                         <legend class="form__legend">Informações pessoais</legend>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="birth" name="birth" placeholder="Data de nascimento">
+                            <input type="date" class="input" id="birth" name="birth" placeholder="Data de nascimento" data-type="dateBirth" required>
                             <label for="birth" class="input-label">Data de nascimento</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
@@ -97,5 +98,7 @@
                 </form>
             </section>
         </main>
+
+        <script type="module" src="assets/js/app.js"></script>
     </body>
 </html>
