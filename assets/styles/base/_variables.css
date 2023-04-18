@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+
+:root {
+    --font-family-body: 'Montserrat', sans-serif;
+    --font-family-logo: 'Pacifico', cursive;
+
+    --font-weight-input: 300;
+
+    --font-size-logo: 28px;
+    --font-size-card-title: 28px;
+    --font-size-label: 20px;
+    --font-size-button: 22px;
+    --font-size-form-fieldset: 22px;
+    --font-size-table-header: 22px;
+    --font-size-modal-title: 28px;
+    --font-size-modal-button: 28px;
+    
+    --primary-color: #0071ea;
+    --secondary-color: #d6eaff;
+    --dark-contrast: #4D4D4D;
+    --light-contrast: #fff;
+    --warning: #df2525;
+    --success: #047900;
+    --transparency: #4d4d4d33;
+
+    --shadow: 0 5px 10px #55a6ff38;
+}
+
+@media(min-width: 800px) {
+    :root {
+        --font-size-logo: 56px;
+    }
+}

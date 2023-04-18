@@ -1,0 +1,8 @@
+.form {
+    margin-top: 2rem;
+}
+
+.form__legend {
+    font-size: var(--font-size-form-fieldset);
+    margin-bottom: 1rem;
+}
