@@ -1,0 +1,8 @@
+.description-textarea {
+    height: 15.75rem;
+}
+
+.product-price, 
+.product-description {
+    width: 50%;
+}

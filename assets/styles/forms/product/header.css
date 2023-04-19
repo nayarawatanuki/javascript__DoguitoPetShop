@@ -1,0 +1,23 @@
+.header {
+    align-items: center;
+    background-color: var(--light-contrast);
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    height: 4.75rem;
+    margin-bottom: 2rem;
+} 
+
+.header__logo {
+    width: 3rem;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__link {
+    margin-left: 2rem;
+}
+

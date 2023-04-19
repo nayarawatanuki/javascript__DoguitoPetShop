@@ -1,0 +1,30 @@
+.header-client {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.header-client__logo {
+    width: 2.625rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-client__title {
+    font-family: var(--font-family-logo);
+    font-size: var(--font-size-logo);
+    margin-bottom: 1rem;
+}
+
+
+@media(min-width: 800px) {
+
+    .header-client__logo {
+        width: 5.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .header-client__title {
+        margin-bottom: 2rem;
+    }
+}

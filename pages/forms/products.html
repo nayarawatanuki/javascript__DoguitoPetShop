@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../assets/styles/style.css">
+
+        <title>Doguito Petshop | Cadastro de produto</title>
+    </head>
+
+    <body>
+        <header class="header container">
+            <img src="../../assets/img/doguitoadm.svg" alt="Logo Doguito" class="header__logo">
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="">Dashboard</a></li>
+                    <li class="menu__link"><a href="">Produtos</a></li>
+                    <li class="menu__link"><a href="">Clientes</a></li>
+                    <li class="menu__link"><a href="">Pets</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container flex flex--center flex--column">
+            <section class="card products">
+                <h1 class="card__title">Cadastrar um produto</h1>
+                <form action="../messages/product/success.html" class="flex flex--column">
+                    <div class="input-container">
+                        <input type="text" class="input" id="name" name="name" data-type="name" placeholder="Nome do produto" required>
+                        <label for="name" class="input-label">Nome</label>
+                        <span class="input__msg-error">Este campo não está válido.</span>
+                    </div>
+
+                    <div class="input-container product-price">
+                        <input type="text" class="input" id="price" name="price" data-type="price" placeholder="Preço" required>
+                        <label for="price" class="input-label">Preço</label>
+                        <span class="input__msg-error">Este campo não está válido.</span>
+                    </div>
+
+                    <div class="input-container product-description">
+                        <input type="text" class="input" id="description" name="description" placeholder="Descrição">
+                        <label for="product-description" class="input-label">Descrição</label>
+                        <span class="input__msg-error">Este campo não está válido.</span>
+                    </div>
+
+                    <button class="button" data-from="product">Cadastrar produto</button>
+                </form>
+            </section>
+        </main>
+
+        <script type="module" src="../../assets/js/app.js"></script>
+        <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    </body>
+</html>
