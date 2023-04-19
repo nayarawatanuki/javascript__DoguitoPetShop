@@ -1,19 +1,4 @@
-export function validates(input) {
-
-    const typeInput = input.dataset.type;
-
-    if(validators[typeInput]) {
-
-        validators[typeInput](input);
-    }
-}
-
-const validators = {
-    dateBirth: input => validationBirth(input)
-}
-
-
-function validationBirth(input) {
+export function validationBirth(input) {
 
     const dateReceived = new Date(input.value);
     let msg = "";
@@ -33,11 +18,3 @@ function over18(date) {
 
     return dateMore18 <= currentDate;
 }
-
-
-const dateBirth = document.querySelector("#birth");
-
-dateBirth.addEventListener("blur", (event) => {
-
-    validationBirth(event.target)
-})

@@ -1,4 +1,4 @@
-import { validates } from "./validations/birth.js";
+import { validates } from "./validations/inputs.js";
 
 const inputs = document.querySelectorAll("input");
 

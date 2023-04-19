@@ -23,25 +23,25 @@
 
                 <h2 class="card__title">Complete seu cadastro</h2>
 
-                <form action="pages/registers/msg-success.html" class="form flex flex--column">
+                <form action="pages/messages/success.html" class="form flex flex--column">
                     <fieldset>
 
                         <legend class="form__legend">Informações básicas</legend>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="name" name="name" placeholder="Nome" required>
+                            <input type="text" class="input" id="name" name="name" placeholder="Nome" data-type="name" required>
                             <label for="name" class="input-label">Nome</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
 
                         <div class="input-container">
-                            <input type="email" class="input" id="e-mail" name="e-mail" placeholder="E-mail" required>
+                            <input type="email" class="input" id="e-mail" name="e-mail" placeholder="E-mail" data-type="eMail" required>
                             <label for="e-mail" class="input-label">E-mail</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
 
                         <div class="input-container">
-                            <input type="password" class="input" id="password" name="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#@$%^&*_=+-]).{6,12}$" title="A senha deve conter: entre 6 a 12 caracteres, pelo menos 1 letra maiuscula, 1 numero e não deve conter símbolos." required>
+                            <input type="password" class="input" id="password" name="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#@$%^&*_=+-]).{6,12}$" title="A senha deve conter: entre 6 a 12 caracteres, pelo menos 1 letra maiuscula, 1 numero e não deve conter símbolos." data-type="password" required>
                             <label for="password" class="input-label">Senha</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
@@ -53,13 +53,13 @@
                         <legend class="form__legend">Informações pessoais</legend>
 
                         <div class="input-container">
-                            <input type="date" class="input" id="birth" name="birth" placeholder="Data de nascimento" data-type="dateBirth" required>
+                            <input type="date" class="input" id="birth" name="birth" placeholder="Data de nascimento" data-type="birth" required>
                             <label for="birth" class="input-label">Data de nascimento</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="cpf" name="cpf" placeholder="CPF">
+                            <input type="text" class="input" id="cpf" name="cpf" data-type="cpf" placeholder="CPF" required>
                             <label for="cpf" class="input-label">CPF</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
@@ -70,25 +70,25 @@
                         <legend class="form__legend">Endereço</legend>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="cep" name="cep" placeholder="CEP">
+                            <input type="text" class="input" id="cep" name="cep" pattern="[\d]{5}-?[\d]{3}" data-type="cep" placeholder="CEP" required>
                             <label for="cep" class="input-label">CEP</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="logradouro" name="logradouro" placeholder="Logradouro">
-                            <label for="logradouro" class="input-label">Logradouro</label>
+                            <input type="text" class="input" id="street" name="street" data-type="street" placeholder="street" required>
+                            <label for="street" class="input-label">Logradouro</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
 
                         <div class="input-container">
-                            <input type="text" class="input" id="city" name="city" placeholder="Cidade">
+                            <input type="text" class="input" id="city" name="city" data-type="city" placeholder="Cidade" required>
                             <label for="city" class="input-label">Cidade</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
                         
                         <div class="input-container">
-                            <input type="text" class="input" id="state" name="state" placeholder="Estado">
+                            <input type="text" class="input" id="state" name="state" data-type="state" placeholder="Estado" required>
                             <label for="state" class="input-label">Estado</label>
                             <span class="input__msg-error">Este campo não está válido</span>
                         </div>
